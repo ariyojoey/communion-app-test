@@ -56,7 +56,7 @@ const EventCard = ({ event, setEvents, events }) => {
         </button>
       </div>
 
-      {/* Edit Event Modal */}
+      {/* Edit Event Modal - Appears Directly Over the Event Card */}
       {showEditModal && (
         <div className="modal" ref={modalRef}>
           <FiX className="close-icon" onClick={() => setShowEditModal(false)} />

@@ -1,0 +1,64 @@
+/* Add Event Form */
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Form Labels */
+  .add-event-form label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Form Inputs */
+  .add-event-form input,
+  .add-event-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  /* Save Button */
+  .save-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background: #218838;
+  }
+  
+  /* Fade-in animation for the form */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .add-event-form {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  

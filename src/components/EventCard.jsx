@@ -56,9 +56,9 @@ const EventCard = ({ event, setEvents, events }) => {
         </button>
       </div>
 
-      {/* Edit Event Modal - Appears Directly Over the Event Card */}
+      {/* Edit Event Modal */}
       {showEditModal && (
-        <div className="modal" ref={modalRef}>
+        <div className="modal" ref={modalRef} style={{ position: 'absolute', zIndex: 1000 }}>
           <FiX className="close-icon" onClick={() => setShowEditModal(false)} />
           <h3>Edit Event</h3>
           <form onSubmit={(e) => { e.preventDefault(); handleEdit(); }} className="edit-event-form">

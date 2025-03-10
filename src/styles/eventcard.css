@@ -132,6 +132,23 @@
   background: #218838;
 }
 
+.event-card {
+  position: relative;
+  /* Other styles for the event card */
+}
+
+.event-actions {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.event-card:hover .event-actions,
+.event-card:focus-within .event-actions {
+  display: flex;
+}
+
 /* ─── ANIMATIONS ───────────────── */
 @keyframes fadeIn {
   from {
